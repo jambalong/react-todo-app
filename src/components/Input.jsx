@@ -8,3 +8,5 @@ function Input ({ value, onChange, placeholder }) {
     />
   );
 }
+
+export { Input };

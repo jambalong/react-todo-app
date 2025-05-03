@@ -13,7 +13,7 @@ function TaskPage() {
         name: newTaskName,
         completed: false,
       };
-      setTasks([...tasks, newTask]);
+      setTasks([newTask, ...tasks]);
     };
 
     const handleToggleComplete = (idToToggle) => {

@@ -5,11 +5,13 @@ function Task({ task, onToggle, onDelete }) {
     <div>
       <input
         type="checkbox"
+        checked={task.completed}
+        onChange={() => onToggle(task.id)}
       />
-      <label>
+      <label style={{ textDecoration: task.completed ? 'line-through' : 'none' }}>
         {task.name}
       </label>
-      <Button>Delete</Button>
+      <Button onClick={() => onDelete(task.id)}>Delete</Button>
     </div>
   );
 }

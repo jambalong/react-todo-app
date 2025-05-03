@@ -16,12 +16,26 @@ function TaskPage() {
       setTasks([...tasks, newTask]);
     };
 
+    const handleToggleComplete = (idToToggle) => {
+      setTasks(
+        tasks.map((task) =>
+          task.id === idToToggle ? { ...task, completed: !task.completed} : task
+        )
+      );
+    };
+
+    const handleDeleteTask = (idToDelete) => {
+      setTasks(tasks.filter(task => task.id !== idToDelete));
+    };
+
     return (
         <div>
           <h1 className="header">Task List</h1>
           <TaskInput onAddTask={handleAddTask} />
           <TaskList
             tasks={tasks}
+            onToggleComplete={handleToggleComplete}
+            onDeleteTask={handleDeleteTask}
           />
         </div>
     );

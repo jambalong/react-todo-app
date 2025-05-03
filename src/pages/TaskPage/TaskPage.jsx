@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './TaskPage.css';
+import { TaskInput } from './components/TaskInput'
 
 function TaskPage() {
     // TODO: Render task page components
@@ -17,6 +18,7 @@ function TaskPage() {
     return (
         <div>
           <h1 className="header">Task List</h1>
+          <TaskInput onAddTask={handleAddTask} />
         </div>
     );
 }

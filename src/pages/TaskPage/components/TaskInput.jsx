@@ -16,12 +16,19 @@ function TaskInput({ onAddTask }) {
     }
   };
 
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      handleCreateTask();
+    }
+  };
+
   return (
     <div>
       <Input
         value={taskName}
         onChange={handleInputChange}
         placeholder="Enter a new task"
+        onKeyDown={handleKeyPress}
       />
       <Button onClick={handleCreateTask}>Create</Button>
     </div>

@@ -29,15 +29,15 @@ function TaskPage() {
     };
 
     return (
-        <div>
-          <h1 className="header">Task List</h1>
-          <TaskInput onAddTask={handleAddTask} />
-          <TaskList
-            tasks={tasks}
-            onToggleComplete={handleToggleComplete}
-            onDeleteTask={handleDeleteTask}
-          />
-        </div>
+      <div>
+        <h1 className="header">Task List</h1>
+        <TaskInput onAddTask={handleAddTask} />
+        <TaskList
+          tasks={tasks}
+          onToggleComplete={handleToggleComplete}
+          onDeleteTask={handleDeleteTask}
+        />
+      </div>
     );
 }
 

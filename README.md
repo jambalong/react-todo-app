@@ -13,3 +13,5 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
 ## This repository is from a previous homework, to be used as reference
+
+Live Demo: https://jambalong.github.io/react-todo-app/

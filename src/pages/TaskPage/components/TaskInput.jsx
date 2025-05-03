@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { Input } from "../../../components/Input";
-import { Button } from "../../../components/Button";
+import { Input } from '../../../components/Input';
+import { Button } from '../../../components/Button';
 
 function TaskInput({ onAddTask }) {
   const [taskName, setTaskName] = useState('');

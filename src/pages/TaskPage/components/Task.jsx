@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { GarbageCan } from '../../../components/GarbageCan';
+import './Task.css';
 
 function Task({ task, onToggle, onDelete }) {
   useEffect(() => {
@@ -13,7 +14,7 @@ function Task({ task, onToggle, onDelete }) {
   }, [task.completed, onDelete, task.id]);
 
   return (
-    <div>
+    <div className="task-container">
       <input
         type="checkbox"
         checked={task.completed}

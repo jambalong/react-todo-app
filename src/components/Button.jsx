@@ -1,7 +1,9 @@
-function Button({ onClick, children }) {
+import './Button.css';
+
+function Button({ onClick, children, className }) {
   return (
-    <button onClick={onClick}>
-      {children}
+    <button onClick={onClick} className={className}>
+      <span className="button-text">{children}</span>
     </button>
   );
 }

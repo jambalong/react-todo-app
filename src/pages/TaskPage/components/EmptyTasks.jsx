@@ -1,4 +1,5 @@
 import EmptyTasksGraphic from '../../../assets/graphics/empty-tasks.svg';
+import './EmptyTasks.css';
 
 function EmptyTasks() {
   return (

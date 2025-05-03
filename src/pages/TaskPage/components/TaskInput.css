@@ -1,0 +1,24 @@
+.task-input-container {
+  max-width: 736px;
+  width: 100%;
+  height: 32px;
+  display: flex;
+  gap: 16px;
+  margin-bottom: 26px;
+}
+
+.input-box {
+  flex-grow: 1;
+  padding: 9px;
+}
+
+.input-box::placeholder {
+  color: #8D8D8D;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.create-button {
+  flex-grow: 0;
+  width: 81px
+}

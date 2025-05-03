@@ -1,0 +1,17 @@
+.task-container {
+  border-bottom: 1px solid #D3D3D3;
+  display: flex;
+  gap: 4px;
+  height: 32px;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+label {
+  flex-grow: 1;
+  font-size: 20px;
+}

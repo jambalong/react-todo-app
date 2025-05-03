@@ -1,0 +1,11 @@
+.empty-tasks-graphic {
+  width: 375px;
+  height: 205px;
+  padding: 25px;
+}
+
+.empty-tasks-text {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+}

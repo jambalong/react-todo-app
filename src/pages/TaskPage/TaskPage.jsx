@@ -29,7 +29,7 @@ function TaskPage() {
     };
 
     return (
-      <div>
+      <div className="task-page-container">
         <h1 className="header">Task List</h1>
         <TaskInput onAddTask={handleAddTask} />
         <TaskList

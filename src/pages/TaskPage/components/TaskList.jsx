@@ -1,6 +1,11 @@
 import { Task } from './Task';
+import { EmptyTasks } from './EmptyTasks';
 
 function TaskList({ tasks, onToggleComplete, onDeleteTask }) {
+  if (tasks.length === 0) {
+    return <EmptyTasks />;
+  }
+
   return (
     <ul>
       {tasks.map(task => (

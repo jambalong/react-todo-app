@@ -23,6 +23,8 @@ function TaskInput({ onAddTask }) {
     }
   };
 
+  const isInputFilled = taskName.trim() !== '';
+
   return (
     <div className="task-input-container">
       <Input
@@ -32,7 +34,10 @@ function TaskInput({ onAddTask }) {
         placeholder="Enter a new task"
         onKeyDown={handleKeyPress}
       />
-      <Button className="create-button" onClick={handleCreateTask}>
+      <Button
+        className={`create-button ${isInputFilled ? 'create-button--active' : ''}`}
+        onClick={handleCreateTask}
+      >
         Create
       </Button>
     </div>

@@ -2,7 +2,7 @@ button {
   font-size: 16px;
   cursor: pointer;
   border: 1px solid #C4C4C4;
-  border-radius: 0px;
+  border-radius: 2px;
   background-color: #C4C4C4;
 }
 
@@ -12,6 +12,11 @@ button {
   color: #000000;
 }
 
-button:hover {
-  background-color: #999999;
+.create-button--active {
+  background-color: #00A3FF;
+  border: 1px solid #00A3FF;
+}
+
+.create-button--active .button-text {
+  color: white;
 }

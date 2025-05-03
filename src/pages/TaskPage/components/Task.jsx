@@ -1,6 +1,17 @@
+import { useEffect } from 'react';
 import { Button } from '../../../components/Button';
 
 function Task({ task, onToggle, onDelete }) {
+  useEffect(() => {
+    if (task.completed) {
+      const timer = setTimeout(() => {
+        onDelete(task.id);
+      }, 4000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [task.completed, onDelete, task.id]);
+
   return (
     <div>
       <input

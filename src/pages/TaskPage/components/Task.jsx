@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Button } from '../../../components/Button';
+import { GarbageCan } from '../../../components/GarbageCan';
 
 function Task({ task, onToggle, onDelete }) {
   useEffect(() => {
@@ -22,7 +22,7 @@ function Task({ task, onToggle, onDelete }) {
       <label style={{ textDecoration: task.completed ? 'line-through' : 'none' }}>
         {task.name}
       </label>
-      <Button onClick={() => onDelete(task.id)}>Delete</Button>
+      <GarbageCan onClick={() => onDelete(task.id)} />
     </div>
   );
 }

@@ -1,14 +1,18 @@
 .task-input-container {
-  width: 736px;
+  max-width: 736px;
+  width: 100%;
   height: 32px;
   display: flex;
   gap: 16px;
   margin-bottom: 26px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .input-box {
   flex-grow: 1;
   padding: 9px;
+  height: 32px;
 }
 
 .input-box::placeholder {
@@ -19,5 +23,6 @@
 
 .create-button {
   flex-grow: 0;
-  width: 81px
+  width: 81px;
+  height: 32px;
 }

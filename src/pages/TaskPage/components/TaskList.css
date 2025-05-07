@@ -1,4 +1,5 @@
 .task-list-container {
+  min-width: auto;
   width: 736px;
 }
 

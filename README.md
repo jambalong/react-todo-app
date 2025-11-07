@@ -28,7 +28,7 @@ This project focuses on the core principles of front-end development:
 
 * **Immutability:** Operations like toggling completion status (`handleToggleComplete`) and deletion (`handleDeleteTask`) use functional approaches to return a new state array rather than modifying the existing one directly.
 
-* **Component Composition:** The `TaskPage` acts as a container, passing state and handler functions as **props** down to presentational components (`TaskInput`, `TaskList`).
+* **Component Composition:** The `TaskPage` acts as a container, passing state and handler functions as **props** down to presentational components (`TaskInput`, `TaskList`) and more.
 
 ## **Installation and Setup**
 

@@ -4,41 +4,41 @@ import { TaskInput } from './components/TaskInput'
 import { TaskList } from './components/TaskList';
 
 function TaskPage() {
-    // TODO: Render task page components
-    const [tasks, setTasks] = useState([]);
+  // TODO: Render task page components
+  const [tasks, setTasks] = useState([]);
 
-    const handleAddTask = (newTaskName) => {
-      const newTask = {
-        id: Date.now(),
-        name: newTaskName,
-        completed: false,
-      };
-      setTasks([newTask, ...tasks]);
+  const handleAddTask = (newTaskName) => {
+    const newTask = {
+      id: Date.now(),
+      name: newTaskName,
+      completed: false,
     };
+    setTasks([newTask, ...tasks]);
+  };
 
-    const handleToggleComplete = (idToToggle) => {
-      setTasks(
-        tasks.map((task) =>
-          task.id === idToToggle ? { ...task, completed: !task.completed} : task
-        )
-      );
-    };
-
-    const handleDeleteTask = (idToDelete) => {
-      setTasks(tasks.filter(task => task.id !== idToDelete));
-    };
-
-    return (
-      <div className="task-page-container">
-        <h1 className="header">Task List</h1>
-        <TaskInput onAddTask={handleAddTask} />
-        <TaskList
-          tasks={tasks}
-          onToggleComplete={handleToggleComplete}
-          onDeleteTask={handleDeleteTask}
-        />
-      </div>
+  const handleToggleComplete = (idToToggle) => {
+    setTasks(
+      tasks.map((task) =>
+        task.id === idToToggle ? { ...task, completed: !task.completed } : task
+      )
     );
+  };
+
+  const handleDeleteTask = (idToDelete) => {
+    setTasks(tasks.filter(task => task.id !== idToDelete));
+  };
+
+  return (
+    <div className="task-page-container">
+      <h1 className="header">Pebble List</h1>
+      <TaskInput onAddTask={handleAddTask} />
+      <TaskList
+        tasks={tasks}
+        onToggleComplete={handleToggleComplete}
+        onDeleteTask={handleDeleteTask}
+      />
+    </div>
+  );
 }
 
 export { TaskPage };

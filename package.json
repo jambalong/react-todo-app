@@ -1,9 +1,9 @@
 {
-  "name": "react-todo-app",
+  "name": "pebble-list",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://jambalong.github.io/react-todo-app",
+  "homepage": "https://jambalong.github.io/pebble-list",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

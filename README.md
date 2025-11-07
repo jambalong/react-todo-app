@@ -1,17 +1,56 @@
-# React + Vite
+# **Pebble List**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple, fast, and responsive task list application built with **React** to demonstrate fundamental concepts of component architecture and modern state management.
 
-Currently, two official plugins are available:
+## **Features**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **CRUD Functionality:** Full Create, Read, Update, and Delete capabilities for tasks.
+* **Persistent State:** Tasks are managed using React's `useState` hook.
+* **Responsive Design:** Optimized for display on both desktop and mobile screens.
+* **Modular Architecture:** Clear separation of concerns using functional components (e.g., `TaskInput`, `TaskList`).
 
-## Expanding the ESLint configuration
+## **Live Demo**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+[https://jambalong.github.io/pebble-list/](https://jambalong.github.io/pebble-list/)
 
+## **Tech Stack**
 
-## This repository is from a previous homework, to be used as reference
+* **Framework:** React
+* **Build Tool:** Vite
+* **Language:** JavaScript (ES6+)
+* **Styling:** CSS
 
-Live Demo: https://jambalong.github.io/react-todo-app/
+## **Key Technical Takeaways**
+
+This project focuses on the core principles of front-end development:
+
+* **State Management (`useState`):** Demonstrates how to manage an array of objects (`tasks`) immutably by using the spread operator (`...tasks`) with the `setTasks` updater function.
+
+* **Immutability:** Operations like toggling completion status (`handleToggleComplete`) and deletion (`handleDeleteTask`) use functional approaches to return a new state array rather than modifying the existing one directly.
+
+* **Component Composition:** The `TaskPage` acts as a container, passing state and handler functions as **props** down to presentational components (`TaskInput`, `TaskList`).
+
+## **Installation and Setup**
+
+To run this project locally:
+
+1. **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/jambalong/pebble-list.git
+    cd react-todo-app
+    ```
+
+2. **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+3. **Start the development server:**
+
+    ```bash
+    npm run dev
+    ```
+
+    The application will typically open at `http://localhost:5173`.
